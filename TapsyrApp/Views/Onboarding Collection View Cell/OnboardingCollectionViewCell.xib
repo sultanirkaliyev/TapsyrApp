@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="OnboardingCollectionViewCell" customModule="TapsyrApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="307" height="433"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="307" height="433"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ufQ-8W-xOg">
+                        <rect key="frame" x="0.0" y="0.0" width="307" height="433"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="epQ-e4-knQ">
+                                <rect key="frame" x="44" y="0.0" width="219" height="337.5"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="zL0-hm-pak">
+                                <rect key="frame" x="20" y="377.5" width="267" height="55.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qol-Oc-nPL" customClass="UILabelDeviceClass" customModule="TapsyrApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="267" height="18"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tci-Io-LIP" customClass="UILabelDeviceClass" customModule="TapsyrApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="39" width="267" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="epQ-e4-knQ" secondAttribute="trailing" constant="44" id="9bZ-dH-yUk"/>
+                            <constraint firstItem="zL0-hm-pak" firstAttribute="leading" secondItem="ufQ-8W-xOg" secondAttribute="leading" constant="20" id="Jna-N6-pMG"/>
+                            <constraint firstItem="epQ-e4-knQ" firstAttribute="top" secondItem="ufQ-8W-xOg" secondAttribute="top" id="aAI-Gw-27W"/>
+                            <constraint firstItem="epQ-e4-knQ" firstAttribute="leading" secondItem="ufQ-8W-xOg" secondAttribute="leading" constant="44" id="azg-Ac-5eY"/>
+                            <constraint firstAttribute="trailing" secondItem="zL0-hm-pak" secondAttribute="trailing" constant="20" id="dtg-4r-UE8"/>
+                            <constraint firstItem="zL0-hm-pak" firstAttribute="top" secondItem="epQ-e4-knQ" secondAttribute="bottom" constant="40" id="ru3-bz-sc4"/>
+                            <constraint firstAttribute="bottom" secondItem="zL0-hm-pak" secondAttribute="bottom" id="uxf-HK-S4d"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="ufQ-8W-xOg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="EuW-WE-9aK"/>
+                <constraint firstAttribute="trailing" secondItem="ufQ-8W-xOg" secondAttribute="trailing" id="iIZ-HO-yCe"/>
+                <constraint firstAttribute="bottom" secondItem="ufQ-8W-xOg" secondAttribute="bottom" id="oSx-8o-gHf"/>
+                <constraint firstItem="ufQ-8W-xOg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yhR-L8-RTP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="307" height="433"/>
+            <connections>
+                <outlet property="onboardingDescriptionLabel" destination="tci-Io-LIP" id="LCM-GG-b4s"/>
+                <outlet property="onboardingImageView" destination="epQ-e4-knQ" id="Yc5-8J-vuV"/>
+                <outlet property="onboardingTitleLabel" destination="Qol-Oc-nPL" id="Mdx-tj-Ea8"/>
+            </connections>
+            <point key="canvasLocation" x="-168.84057971014494" y="170.42410714285714"/>
+        </collectionViewCell>
+    </objects>
+</document>

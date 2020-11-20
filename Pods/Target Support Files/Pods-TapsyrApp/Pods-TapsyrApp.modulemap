@@ -1,0 +1,6 @@
+framework module Pods_TapsyrApp {
+  umbrella header "Pods-TapsyrApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
